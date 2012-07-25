@@ -1,0 +1,1 @@
+## Snitch: indexing log data

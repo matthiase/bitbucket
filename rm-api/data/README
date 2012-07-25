@@ -1,0 +1,7 @@
+export PYTHONPATH=$PYTHONPATH:~/Source/rm-api
+appcfg.py upload_data --config_file=data/region_loader.py --filename=data/regions.csv --kind=Region [--url=http://localhost:8081/loader] --has_header --auth_domain=izume.com .
+appcfg.py upload_data --config_file=data/dealer_loader.py --filename=data/dealers.csv --kind=Dealer [--url=http://localhost:8081/loader] --has_header --auth_domain=izume.com .
+
+PRODUCTION:
+appcfg.py upload_data --config_file=data/region_loader.py --filename=data/regions.csv --kind=Region --has_header --auth_domain=izume.com .
+appcfg.py upload_data --config_file=data/dealer_loader.py --filename=data/dealers.csv --kind=Dealer --has_header --auth_domain=izume.com .

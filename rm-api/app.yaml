@@ -1,0 +1,11 @@
+application: rm-api
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+- url: /loader
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+- url: .*
+  script: main.py  

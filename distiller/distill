@@ -1,0 +1,7 @@
+CLASSPATH=$CLASSPATH
+for jar in lib/*.jar; do
+    CLASSPATH=$CLASSPATH:$jar
+done
+
+java -cp $CLASSPATH Distiller $@
+
