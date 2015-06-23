@@ -1,0 +1,2 @@
+Run with:
+java -jar target/status-1.0-SNAPSHOT.jar server status.yml

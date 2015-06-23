@@ -1,7 +1,0 @@
-
-CREATE KEYSPACE Playtime;
-USE Playtime;
-
-CREATE COLUMN FAMILY Instrumentations
-    WITH comparator=UTF8Type
-    AND key_validation_class=UTF8Type;

@@ -1,0 +1,23 @@
+# cabinet
+
+FIXME: write description
+
+## Notes
+
+Run with:
+lein run -m cabinet.web/main
+
+Test with:
+curl -X GET http://localhost:8080/
+curl -X PUT -H "Content-Type: application/json" -d '{"name": "hacker"}' http://localhost:8080/
+
+Benchmark with:
+ab -n 1000 -c 25 http://localhost:8080/
+siege -c25 -r1000 -b http://localhost:8080/
+
+
+## License
+
+Copyright (C) 2012 FIXME
+
+Distributed under the Eclipse Public License, the same as Clojure.
